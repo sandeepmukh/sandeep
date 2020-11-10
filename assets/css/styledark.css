@@ -8,22 +8,29 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
-
+.content {
+    width: 80%;
+    background-color: #3C3A4C;
+}
 .toggle {
     background: #5E5B5B;
     width: 75px;
     height: 35px;
     border-radius: 17.5px;
     margin-left: 40px;
+    cursor: pointer;
+    border: 1px darkslategrey solid;
 }
-.switch {
+#switch {
     background: #B8B8B8;
     width: 25px;
     height: 25px;
     border-radius: 50%;
     position: relative;
-    top: 5px;
+    top: 4px;
     left: 45px;
+    border: 1px darkslategrey solid;
+
 }
 a {
     color: #0033cc;
@@ -68,6 +75,13 @@ header {
     left: 10%;
 }
 
+.center {
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+  }
 .center h1 {
     font-family: 'Fjalla One', sans-serif;
     font-size: 450%;
@@ -84,3 +98,27 @@ header {
     top: 30%;
     text-align: center;
   }
+.social-container {
+    position: fixed;
+    bottom: 0;
+    overflow-y: scroll;
+    background: #2A3042;
+    white-space: nowrap;
+    padding: 2vh 0;
+    width: 100%;
+    height: 10%;
+}
+.social {
+    position: relative;
+    display: inline-block;
+    will-change: transform;
+    margin-right: 5%;
+}
+.social a {
+    color: darkgray;
+    text-decoration: none;
+    font-size: 30px;
+}
+.social img {
+    width: 30px;
+}
