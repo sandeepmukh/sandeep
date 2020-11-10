@@ -71,7 +71,7 @@ function loadupTheme() {
   }
 }
 
-function getCookie() {
+function getTheme() {
   var name = "isDark=";
   var cookie = decodeURIComponent(document.cookie);
   cookie = cookie.split(';');
