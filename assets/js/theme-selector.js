@@ -6,7 +6,7 @@ btn.addEventListener("click", changeTheme);
 /* direction = -1 for going from dark to light
 else = 1
 */
-function switchMove(direction) {
+function MoveSwitch(direction) {
   var elem = document.getElementById("switch");   
   var pos = 5;
   var end = 45
@@ -21,12 +21,22 @@ function switchMove(direction) {
       clearInterval(id);
     } else {
       if (backwards) {
-        pos--; 
-        elem.style.left = pos + 'px'; 
+        if (pos <= end) {
+          clearInterval(id);
+        }
+        else {
+          pos--; 
+          elem.style.left = pos + 'px'; 
+        }
       }
       else {
-        pos++; 
-        elem.style.left = pos + 'px'; 
+        if (pos >= end) {
+          clearInterval(id);
+        }
+        else {
+          pos++; 
+          elem.style.left = pos + 'px'; 
+        }
       }
     }
   }
@@ -34,11 +44,11 @@ function switchMove(direction) {
 
 function changeTheme() {
   if (theme.getAttribute("href") == "./assets/css/stylelight.css") {
-    switchMove(1)
+    MoveSwitch(1)
     theme.href = "./assets/css/styledark.css";
     writeCookie(false);
   } else {
-    switchMove(-1)
+    MoveSwitch(-1)
     theme.href = "./assets/css/stylelight.css";
     writeCookie(true);
   }

@@ -10,8 +10,29 @@ body {
     background-size: cover;
   }
 .content {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    background-color: #DDEFEF;
     width: 80%;
-    background-color: #FFFFFF;
+    border: 4px solid darkgray;
+    margin-bottom: 50px;
+    overflow-y: auto;
+}
+.content h1 {
+    text-align: center;
+}
+.content a {
+    text-decoration: none;
+    color: black;
+}
+.content h2 {
+    text-align: center;
+    padding-bottom: 10px;
 }
 .toggle {
     background: #E5E5E5;
@@ -45,6 +66,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .navbar a {
     text-decoration: none;
@@ -52,9 +74,15 @@ header {
     margin-left: 40px;
     opacity: 50%;
     padding: 10px;
+    background-image: linear-gradient(#E6AF2E, #E6AF2E);
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-size: 100% 2px;
 }
 .navbar a:hover {
     opacity: 100%;
+    background-size: 100% 100%;
+    transition: background-position .1s, background-size .1s ease-in .1s;
 }
 .switch-container {
     display: flex;
@@ -92,12 +120,10 @@ header {
     position: fixed;
     bottom: 0;
     overflow-y: scroll;
-    overflow-x: none;
     background: #DDEFEF;
     white-space: nowrap;
-    padding: 2vh 0;
+    padding: 1vh 1vw;
     width: 100%;
-    height: 10%;
 }
 .social {
     position: relative;
@@ -106,11 +132,19 @@ header {
     will-change: transform;
     margin-right: 5%;
     padding-left: 1vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "Roboto";
+
 }
 .social a {
     color: black;
     text-decoration: none;
     font-size: 30px;
+    opacity: 40%;
+}
+.social a:hover {
+    opacity: 100%;
 }
 .social img {
     width: 30px;

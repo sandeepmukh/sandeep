@@ -9,8 +9,39 @@ body {
     background-size: cover;
 }
 .content {
+    color: lightgray;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    background-color: #2A3042;
     width: 80%;
-    background-color: #3C3A4C;
+    border: 4px solid darkgray;
+    margin-bottom: 50px;
+    overflow-y: auto;
+}
+.content h1 {
+    text-align: center;
+}
+.content a {
+    text-decoration: none;
+    color: lightgray;
+}
+.content h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.toggle {
+    background: #E5E5E5;
+    width: 75px;
+    height: 35px;
+    border-radius: 17.5px;
+    margin-left: 40px;
+    border: 1px darkgray solid;
+    cursor: pointer;
 }
 .toggle {
     background: #5E5B5B;
@@ -49,15 +80,22 @@ header {
     flex-wrap: wrap;
     align-items: center;
 }
+/* Transition inspired by https://dev.to/wtaylor45/quick-and-easy-text-highlight-animation-386e */
 .navbar a {
     text-decoration: none;
     color: lightgray;
     margin-left: 40px;
     opacity: 50%;
     padding: 10px;
+    background-image: linear-gradient(#6e6321, #6e6321);
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-size: 100% 2px;
 }
 .navbar a:hover {
     opacity: 100%;
+    background-size: 100% 100%;
+    transition: background-position .1s, background-size .1s ease-in .1s;
 }
 .switch-container {
     display: flex;
@@ -104,21 +142,31 @@ header {
     overflow-y: scroll;
     background: #2A3042;
     white-space: nowrap;
-    padding: 2vh 0;
+    padding: 1vh 1vw;
     width: 100%;
-    height: 10%;
 }
 .social {
     position: relative;
     display: inline-block;
     will-change: transform;
     margin-right: 5%;
+    padding-left: 1vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "Roboto";
 }
 .social a {
     color: darkgray;
     text-decoration: none;
     font-size: 30px;
+    opacity: 40%;
+}
+.social a:hover {
+    opacity: 100%;
 }
 .social img {
     width: 30px;
+}
+h2 {
+    color: darkgray;
 }
