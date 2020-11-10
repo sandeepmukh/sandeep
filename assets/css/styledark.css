@@ -1,0 +1,86 @@
+body {
+    color: #eee;
+    margin: 0;
+    padding: 0;
+    background: url('../img/darkmodebg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.toggle {
+    background: #5E5B5B;
+    width: 75px;
+    height: 35px;
+    border-radius: 17.5px;
+    margin-left: 40px;
+}
+.switch {
+    background: #B8B8B8;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    left: 45px;
+}
+a {
+    color: #0033cc;
+}
+header {
+    font-family: 'B612', Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color:#2A3042;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.navbar a {
+    text-decoration: none;
+    color: lightgray;
+    margin-left: 40px;
+    opacity: 50%;
+    padding: 10px;
+}
+.navbar a:hover {
+    opacity: 100%;
+}
+.switch-container {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    margin-left: auto;
+}
+.switch-container p {
+    position: relative;
+    color: lightgray;
+    opacity: 50%;
+    padding: 0;
+    margin: 0;
+    margin-right: 4vw;
+    left: 10%;
+}
+
+.center h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 450%;
+}
+
+.center h3 {
+    font-size: 150%;
+    font-family: 'Roboto', sans-serif;
+}
+.center {
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+  }

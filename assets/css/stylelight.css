@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../img/lightmodebg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+a {
+    color: #0033cc;
+}
+.toggle {
+    background: #E5E5E5;
+    width: 75px;
+    height: 35px;
+    border-radius: 17.5px;
+    margin-left: 40px;
+    border: 1px darkgray solid;
+}
+.switch {
+    background: #FFFFFF;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    top: 4px;
+    left: 5px;
+    border: 1px darkgray solid;
+}
+header {
+    font-family: 'B612', Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color:#DDEFEF;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+    margin-left: 40px;
+    opacity: 50%;
+    padding: 10px;
+}
+.navbar a:hover {
+    opacity: 100%;
+}
+.switch-container {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    margin-left: auto;
+}
+.switch-container p {
+    position: relative;
+    color: black;
+    opacity: 50%;
+    padding: 0;
+    margin: 0;
+    margin-right: 4vw;
+    left: 10%;
+}
+
+.center h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 450%;
+}
+
+.center h3 {
+    font-size: 150%;
+    font-family: 'Roboto', sans-serif;
+}
+.center {
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+  }
