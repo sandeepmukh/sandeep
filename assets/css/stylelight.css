@@ -22,9 +22,11 @@ body {
     border: 4px solid darkgray;
     margin-bottom: 50px;
     overflow-y: auto;
+    font-family: 'Roboto', sans-serif;
 }
 .content h1 {
     text-align: center;
+    font-family: 'Fjalla One', sans-serif;
 }
 .content a {
     text-decoration: none;
@@ -54,7 +56,6 @@ body {
     border: 1px darkgray solid;
 }
 header {
-    font-family: 'B612', Arial, Helvetica, sans-serif;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
@@ -66,8 +67,9 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
+/* Transition inspired by https://dev.to/wtaylor45/quick-and-easy-text-highlight-animation-386e */
 .navbar a {
     text-decoration: none;
     color: black;

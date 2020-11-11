@@ -1,0 +1,14 @@
+.bio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.bio img {
+    width: 30vw;
+    align-self: end;
+    margin: auto;
+}
+.bio p {
+    margin: 5%;
+    width: 600px;
+}

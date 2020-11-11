@@ -1,0 +1,24 @@
+.proj-container-all {
+    display: flex;
+    flex-direction: column;
+}
+.proj-container-content {
+    display: flex;
+    flex-direction: row;
+}
+.proj-container-all h1 {
+    margin: auto;
+}
+.proj-container-content img {
+    width: 40vw;
+    height: auto;
+    margin: auto;
+}
+.proj-container-content p {
+    width: 500px;
+    margin: 20px;
+}
+
+hr {
+    border-width: 2px;
+}
