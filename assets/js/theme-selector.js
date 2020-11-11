@@ -78,7 +78,7 @@ function getTheme() {
   for(var i = 0; i <cookie.length; i++) {
     var char= cookie[i];
     while (char.charAt(0) == ' ') {
-      char= char.substring(1);
+      char = char.substring(1);
     }
     if (char.indexOf(name) == 0) {
       return char.substring(name.length, char.length);
