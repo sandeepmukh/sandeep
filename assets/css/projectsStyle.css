@@ -16,13 +16,29 @@
     height: auto;
     margin: auto;
 }
-
+.proj-container-all h2 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
 .proj-container-content p {
     width: 30vw;
+    padding: 20px;
     min-width: 300px;
-    margin: 20px;
+    margin: 20px auto;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.proj-container-content p a {
+    opacity: 70%;
+}
+
+.proj-container-content p a:hover {
+    opacity: 100%;
+    text-decoration: underline;
 }
 
 hr {
     border-width: 2px;
+}
+.content {
+    height: 450px;
+    overflow-y: auto;
 }

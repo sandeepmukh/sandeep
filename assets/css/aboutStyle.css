@@ -4,7 +4,7 @@
     flex-wrap: wrap;
 }
 .bio img {
-    width: 30vw;
+    width: 25vw;
     align-self: end;
     margin: auto;
 }
@@ -12,3 +12,4 @@
     margin: 5%;
     width: 600px;
 }
+

@@ -76,6 +76,7 @@ header {
     position: fixed;
     top: 0;
     background-color:#2A3042;
+    z-index: 10000;
 }
 .navbar {
     display: flex;
