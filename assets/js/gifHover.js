@@ -1,6 +1,6 @@
 // Initializing map of gifs
 let gifMap = new Map();
-gifMap.set("./assets/img/BearMaps.JPG", "./assets/img/BearMapsGif.gif");
+gifMap.set("./assets/img/bearmaps.JPG", "./assets/img/BearMapsGif.gif");
 gifMap.set("./assets/img/NBodyExtreme.PNG","./assets/img/NBodyExtremeGif.gif")
 gifMap.set("./assets/img/Scheme.PNG", "./assets/img/SchemeGif.gif")
 gifMap.set("./assets/img/Cats.PNG", "./assets/img/CatsGif.gif")
