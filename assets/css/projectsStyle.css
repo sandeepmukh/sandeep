@@ -13,7 +13,6 @@
 }
 .proj-container-content img {
     width: 40vw;
-    height: auto;
     margin: auto;
 }
 .proj-container-all h2 {
@@ -37,8 +36,26 @@
 
 hr {
     border-width: 2px;
+    margin-top: 20px;
 }
 .content {
     height: 450px;
-    overflow-y: auto;
+    overflow: auto;
 }
+.hidden {
+    visibility: hidden;
+}
+/* #carousel, 
+.proj-container-all {
+    width: 100%;
+    height: auto;
+}
+#carousel {
+    position: relative;
+    overflow: hidden;
+}
+#projects-row {
+    display: flex;
+    position: relative;
+    left: 0px;
+} */

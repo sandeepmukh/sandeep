@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="./assets/img/faviconpfp.png">
+        <link href="./assets/css/stylelight.css" rel="stylesheet" id="theme">
+		<link href="./assets/css/testProj.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About Me</a>
+                <a href="nonacademic.html">Non-Academic</a>
+                <div class="switch-container">
+                    <p>Change Theme</p>
+                    <div class="toggle">
+                        <div id="switch"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="carousel">
+            <h1 id="title">Projects</h1>
+            <div id="projects-row">
+                <div class="proj-container-all">
+                    <h2>Bear Maps</h2>
+                    <div class="proj-container-content">
+                        <img src="./assets/img/bearmaps.JPG" id="bearmaps">
+                        <p>
+                            This is a JavaSpark website which hosts an interactive map of Berkeley, CA I built in CS61B. It can find locations, autocomplete inputs, and compute the shortest path between two locations.
+                        </p>
+                    </div>    
+                </div>
+                <hr>
+                <div class="proj-container-all">
+                    <h2>NBody Extreme</h2>
+                    <div class="proj-container-content">
+                        <p>
+                            This project models space using Newton's laws of gravitation and can simular orbitting bodies.
+                            I also created an interactive game that I detail <a href="https://www.youtube.com/watch?v=VDvepcOWb4k&ab_channel=SandeepMukherjee">here</a>.
+                            In this game the user controls the space ship and has to destroy all the planets to win, but if the space ship is destroyed you lose.
+                        </p>
+                        <img src="./assets/img/NBodyExtreme.PNG" id="Nbody">
+                    </div>    
+                </div>
+                <hr>
+                <div class="proj-container-all">
+                    <h2>Scheme Interpreter</h2>
+                    <div class="proj-container-content">
+                        <img src="./assets/img/Scheme.PNG" id="scheme">
+                        <p>
+                            For this project, I implemented a fully functional, tail recursive  scheme interpreter. 
+                            You can see it work by hovering over the image! Scheme is a LISP (list processing) language
+                            that was popular during the '70s.
+                        </p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <script src="./assets/js/theme-selector.js"></script>
+        <script src="./assets/js/gifHover.js"></script>
+    </body>
+</html>

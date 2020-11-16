@@ -1,0 +1,31 @@
+.proj-container-all {
+    background-color: lightskyblue;
+}
+.proj-container-content img {
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    /* margin-left: 25px;
+    margin-right: 25px; */
+}
+#carousel,
+.proj-container-all {
+    width: 800px;
+    max-width: 90vw;
+    height: auto;
+}
+#carousel {
+    position: relative;
+    /* overflow: hidden; */
+    top: 90px;
+    margin: auto;
+}
+#projects-row {
+    display: flex;
+
+    position: relative;
+    left: 0px;
+}
+#title {
+    margin: auto;
+}
