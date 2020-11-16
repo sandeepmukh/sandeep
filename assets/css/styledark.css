@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Subrayada&display=swap');
 body {
     color: #eee;
     margin: 0;
@@ -26,7 +28,7 @@ body {
 }
 .content h1 {
     text-align: center;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Montserrat Subrayada', sans-serif;
 }
 .content a {
     text-decoration: none;
@@ -82,7 +84,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 /* Transition inspired by https://dev.to/wtaylor45/quick-and-easy-text-highlight-animation-386e */
 .navbar a {
@@ -126,7 +128,7 @@ header {
     text-align: center;
   }
 .center h1 {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 450%;
 }
 
@@ -158,13 +160,14 @@ header {
     padding-left: 1vw;
     padding-top: 0;
     padding-bottom: 0;
-    font-family: "Roboto";
+    font-family: 'Montserrat', sans-serif;
 }
 .social a {
     color: darkgray;
     text-decoration: none;
     font-size: 30px;
     opacity: 40%;
+    
 }
 .social a:hover {
     opacity: 100%;

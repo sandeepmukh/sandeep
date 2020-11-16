@@ -75,8 +75,8 @@ function getTheme() {
   var name = "isDark=";
   var cookie = decodeURIComponent(document.cookie);
   cookie = cookie.split(';');
-  for(var i = 0; i <cookie.length; i++) {
-    var char= cookie[i];
+  for(var i = 0; i < cookie.length; i++) {
+    var char = cookie[i];
     while (char.charAt(0) == ' ') {
       char = char.substring(1);
     }
