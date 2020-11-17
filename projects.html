@@ -2,9 +2,10 @@
 <html>
 	<head>
         <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="./assets/img/faviconpfp.png">
         <link href="./assets/css/stylelight.css" rel="stylesheet" id="theme">
-		<link href="./assets/css/projectsStyle.css" rel="stylesheet">
+		<link href="./assets/css/testProj.css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
     </head>
@@ -23,82 +24,72 @@
                 </div>
             </nav>
         </header>
-        <div class="content">
-            <h1 class="name">Projects</h1>
-            <div id="carousel">
-                <hr>
-                <div id="projects-row">
-                    <div class="proj-container-all">
-                        <h2>Bear Maps</h2>
-                        <div class="proj-container-content">
-                            <img src="./assets/img/bearmaps.JPG" id="bearmaps">
-                            <p>
-                                This is a JavaSpark website which hosts an interactive map of Berkeley, CA I built in CS61B. It can find locations, autocomplete inputs, and compute the shortest path between two locations.
-                            </p>
-                        </div>    
-                    </div>
-                    <hr>
-                    <div class="proj-container-all">
-                        <h2>NBody Extreme</h2>
-                        <div class="proj-container-content">
-                            <p>
-                                This project models space using Newton's laws of gravitation and can simular orbitting bodies.
-                                I also created an interactive game that I detail <a href="https://www.youtube.com/watch?v=VDvepcOWb4k&ab_channel=SandeepMukherjee">here</a>.
-                                In this game the user controls the space ship and has to destroy all the planets to win, but if the space ship is destroyed you lose.
-                            </p>
-                            <img src="./assets/img/NBodyExtreme.PNG" id="Nbody">
-                        </div>    
-                    </div>
-                    <hr>
-                    <div class="proj-container-all">
-                        <h2>Scheme Interpreter</h2>
-                        <div class="proj-container-content">
-                            <img src="./assets/img/Scheme.PNG" id="scheme">
-                            <p>
-                                For this project, I implemented a fully functional, tail recursive  scheme interpreter. 
-                                You can see it work by hovering over the image! Scheme is a LISP (list processing) language
-                                that was popular during the '70s.
-                            </p>
-                        </div>    
-                    </div>
-                    <hr>
-                    <div class="proj-container-all">
-                        <h2>CATS</h2>
-                        <div class="proj-container-content">
-                            <p>
-                                For this project, I created an autocorrecting typing speed software! It also has a feature that displays
-                                the user's accuracy. 
-                            </p>
-                            <img src="./assets/img/Cats.PNG" id="cats">
-                        </div>    
-                    </div>
-                    <hr>
-                    <div class="proj-container-all">
-                        <h2>Ants</h2>
-                        <div class="proj-container-content">
-                            <img src="./assets/img/Ants.PNG" id="ants">
-                            <p>
-                                This tower defense game is based on Pop Cap's Plants Vs Zombies. You play as the Ants
-                                and try to defeat the bees. You win by defeating the Stanford Bee. 
-                            </p>
-                        </div>    
-                    </div>
-                    <hr>
-                    <div class="proj-container-all">
-                        <h2>Hog</h2>
-                        <div class="proj-container-content">
-                            <p>
-                                This is a dice game with a unique set of rules. Read about the rules <a href="https://inst.eecs.berkeley.edu/~cs61a/su20/proj/hog/">here</a>. 
-                                You win by reaching 100 points first. You can either play against a set of computer generated strategies or against a friend. 
-                            </p>
-                            <img src="./assets/img/Hog.PNG" id="hog">
-                        </div>    
-                    </div>
-                </div>
+
+        <div id="pictures">
+            <img src="./assets/img/bearmaps.JPG" alt="" id="picture1">
+            <img src="./assets/img/NBodyExtreme.PNG" alt="" id="picture2">
+            <img src="./assets/img/Scheme.PNG" alt="" id="picture3">
+            <img src="./assets/img/Cats.PNG" alt="" id="picture4">
+            <img src="./assets/img/Ants.PNG" alt="" id="picture5">
+            <img src="./assets/img/Hog.PNG" alt="" id="picture6">
+        </div> 
+        <h1 class="center" style="font-family: 'Fjalla One', comic sans;">Projects</h1>
+        <div id="lightbox-overlay" class="hidden"></div>
+
+        <div class="lightbox hidden" id="proj1">
+            <h2 class="title">Bear Maps</h2>
+            <img src="./assets/img/bearmaps.JPG" id="1">
+            <div class="caption">
+                This is a JavaSpark website which hosts an interactive map of Berkeley, CA I built in CS61B. It can find locations, autocomplete inputs, and compute the shortest path between two locations.
             </div>
         </div>
-    Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        <div class="lightbox hidden" id="proj2">
+            <h2 class="title">NBody Extreme</h2>
+            <img src="./assets/img/NBodyExtreme.PNG" id="2">
+            <div class="caption">
+                This project models space using Newton's laws of gravitation and can simular orbitting bodies.
+                I also created an interactive game that I detail <a href="https://www.youtube.com/watch?v=VDvepcOWb4k&ab_channel=SandeepMukherjee">here</a>.
+                In this game the user controls the space ship and has to destroy all the planets to win, but if the space ship is destroyed you lose.             
+            </div>
+        </div>
+        <div class="lightbox hidden" id="proj3">
+            <h2 class="title">Scheme Interpreter</h2>
+            <img src="./assets/img/Scheme.PNG" id="3">
+            <div class="caption">
+                For this project, I implemented a fully functional, tail recursive  scheme interpreter. 
+                You can see it work by hovering over the image! Scheme is a LISP (list processing) language
+                that was popular during the '70s.
+            </div>
+        </div>
+        <div class="lightbox hidden" id="proj4">
+            <h2 class="title">CS61A: Autocorrected Typing Software</h2>
+            <img src="./assets/img/Cats.PNG" id="4">
+            <div class="caption">
+                For this project, I created an autocorrecting typing speed software. It also has a feature that displays
+                the user's accuracy. 
+            </div>
+        </div>
+        <div class="lightbox hidden" id="proj5">
+            <h2 class="title">Ants vs. Some Bees</h2>
+            <img src="./assets/img/Ants.PNG" id="5">
+            <div class="caption">
+                This tower defense game is based on Pop Cap's Plants Vs Zombies. You play as the Ants
+                and try to defeat the bees. You win by defeating the Stanford Bee. 
+            </div>
+        </div>
+        <div class="lightbox hidden" id="proj6">
+            <h2 class="title">The Game of Hog</h2>
+            <img src="./assets/img/Hog.PNG" id="6">
+            <div class="caption">
+                This is a dice game with a unique set of rules. Read about the rules <a href="https://inst.eecs.berkeley.edu/~cs61a/su20/proj/hog/">here</a>. 
+                You win by reaching 100 points first. You can either play against a set of computer generated strategies or against a friend. 
+            </div>
+        </div>
+
         <script src="./assets/js/theme-selector.js"></script>
         <script src="./assets/js/gifHover.js"></script>
+        <script src="./assets/js/popout.js"></script>
+        <script src="./assets/js/simplifiedProj.js"></script>
+
     </body>
 </html>

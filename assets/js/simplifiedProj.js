@@ -1,0 +1,12 @@
+var screenSize = screen.width;
+let links = document.querySelectorAll("a");
+function switchProj() {
+    if (screenSize < 500) {
+        links.forEach(element => {
+            if (element.href.includes("projects.html")) {
+                element.href = "projects2.html";
+            }
+        });
+    }
+}
+window.onload = switchProj;

@@ -9,12 +9,14 @@ gifMap.set("./assets/img/Ants.PNG", "./assets/img/AntsGif.gif")
 
 
 // Add event listeners to add and remove gif
-var imgs = document.querySelectorAll(".proj-container-content img");
+var imgs = document.querySelectorAll("img");
 imgs.forEach(img => {
     const pathBuilder = img.src.search("assets");
     const path = "./" + img.src.slice(pathBuilder);
-    document.getElementById(img.id).addEventListener("mouseenter", function() {playGif(path, img.id);});
-    document.getElementById(img.id).addEventListener("mouseleave", function() {playGif(gifMap.get(path), img.id);});
+    if (img.id != null) {
+        document.getElementById(img.id).addEventListener("mouseenter", function() {playGif(path, img.id);});
+        document.getElementById(img.id).addEventListener("mouseleave", function() {playGif(gifMap.get(path), img.id);});
+    }
   })
 
 // Switch from gif to not gif or vice versa
