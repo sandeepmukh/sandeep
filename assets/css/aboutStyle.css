@@ -1,18 +1,51 @@
-.bio {
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+ .bio {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 .bio img {
     width: 25vw;
-    align-self: end;
     margin: auto;
 }
-.bio p {
+ .bio .text {
     margin: 5%;
     width: 600px;
-}
-/* body {
-    background: none
-} */
+    font-family: "Source Code Pro", monospace;
+    font-size: 15px;
+} 
+#social-icons {
+    display: flex;
+    position: relative;
+    top: 5%;
+    background: lightgray;
+    width: 160px;
+    border-radius: 10px;
+    margin-left: auto;
 
+}
+#social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+
+}
+
+h1 {
+    margin: 10px auto;
+    border-right: solid 3px black;
+    white-space: nowrap;
+    overflow: hidden;    
+    animation: text 2s steps(14,end) 1s 1 normal both,
+                cursor 600ms steps(14,end) 10,
+                cursor 200ms linear 5s 1 forwards;
+}
+/* inspo: https://www.codesdope.com/blog/article/12-creative-css-and-javascript-text-typing-animati/ */
+@keyframes text{
+    from{width: 0;}
+    to{width: 170px;}
+}
+@keyframes cursor{
+    from{border-right-color: inherit;}
+    to{border-right-color: transparent;}
+}

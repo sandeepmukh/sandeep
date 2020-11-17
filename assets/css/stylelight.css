@@ -90,6 +90,7 @@ header {
     flex-direction: column-reverse;
     position: relative;
     margin-left: auto;
+    margin-top: 4px;
 }
 .switch-container p {
     position: relative;
