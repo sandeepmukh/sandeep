@@ -9,6 +9,7 @@
     width: auto;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 2%;
 }
 #pictures img {
     width: 400px;
