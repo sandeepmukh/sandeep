@@ -6,6 +6,8 @@ gifMap.set("./assets/img/Scheme.PNG", "./assets/img/SchemeGif.gif")
 gifMap.set("./assets/img/Cats.PNG", "./assets/img/CatsGif.gif")
 gifMap.set("./assets/img/Hog.PNG", "./assets/img/HogGif.gif")
 gifMap.set("./assets/img/Ants.PNG", "./assets/img/AntsGif.gif")
+gifMap.set("./assets/img/WorldGame.PNG", "./assets/img/WorldGameGif.gif")
+
 
 
 // Add event listeners to add and remove gif
