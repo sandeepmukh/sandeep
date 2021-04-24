@@ -1,107 +1,128 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" href="./assets/img/faviconpfp.png">
-        <link href="./assets/css/stylelight.css" rel="stylesheet" id="theme">
-		<link href="./assets/css/testProj.css" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="about.html">About Me</a>
-                <a href="nonacademic.html">Non-Academic</a>
-                <div class="switch-container">
-                    <p>Change Theme</p>
-                    <div class="toggle">
-                        <div id="switch"></div>
-                    </div>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+JP&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+JP&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/img/faviconpfp.png">
+    <link href="./assets/css/stylelight.css" rel="stylesheet" id="theme">
+    <link href="./assets/css/testProj.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Me</a>
+            <a href="nonacademic.html">Non-Academic</a>
+            <div class="switch-container">
+                <p>Change Theme</p>
+                <div class="toggle">
+                    <div id="switch"></div>
                 </div>
-            </nav>
-        </header>
-        <h1 class="center" style="font-family: 'Fjalla One', comic sans;">Projects</h1>
-        <div id="pictures">
-            <img loading="lazy" src="./assets/img/bearmaps.JPG" alt="" id="picture1">
-            <img loading="lazy" src="./assets/img/NBodyExtreme.PNG" alt="" id="picture2">
-            <img loading="lazy" src="./assets/img/Scheme.PNG" alt="" id="picture3">
-            <img loading="lazy" src="./assets/img/Cats.PNG" alt="" id="picture4">
-            <img loading="lazy" src="./assets/img/Ants.PNG" alt="" id="picture5">
-            <img loading="lazy" src="./assets/img/Hog.PNG" alt="" id="picture6">
-            <img loading="lazy" src="./assets/img/WorldGame.PNG" alt="" id="picture7">
-        </div> 
-        <div id="lightbox-overlay" class="hidden"></div>
+            </div>
+        </nav>
+    </header>
+    <h1 class="center" style="font-family: 'Fjalla One', comic sans;">Projects</h1>
+    <div id="pictures">
+        <img loading="lazy" src="./assets/img/pigcasso.PNG" alt="" id="picture1">
+        <img loading="lazy" src="./assets/img/bearmaps.JPG" alt="" id="picture8">
+        <img loading="lazy" src="./assets/img/NBodyExtreme.PNG" alt="" id="picture2">
+        <img loading="lazy" src="./assets/img/Scheme.PNG" alt="" id="picture3">
+        <img loading="lazy" src="./assets/img/Cats.PNG" alt="" id="picture4">
+        <img loading="lazy" src="./assets/img/Ants.PNG" alt="" id="picture5">
+        <img loading="lazy" src="./assets/img/Hog.PNG" alt="" id="picture6">
+        <img loading="lazy" src="./assets/img/WorldGame.PNG" alt="" id="picture7">
+    </div>
+    <div id="lightbox-overlay" class="hidden"></div>
 
+    <div class="lightbox hidden" id="proj8">
+        <h2 class="title">Bear Maps</h2>
+        <img src="./assets/img/bearmaps.JPG" id="8">
+        <div class="caption">
+            This is a JavaSpark website which hosts an interactive map of Berkeley, CA I built in CS61B. It can find
+            locations, autocomplete inputs, and compute the shortest path between two locations.
+        </div>
+    </div>
+    <div class="lightbox hidden" id="proj2">
+        <h2 class="title">NBody Extreme</h2>
+        <img src="./assets/img/NBodyExtreme.PNG" id="2">
+        <div class="caption">
+            This project models space using Newton's laws of gravitation and can simular orbitting bodies.
+            I also created an interactive game that I detail <a
+                href="https://www.youtube.com/watch?v=VDvepcOWb4k&ab_channel=SandeepMukherjee">here</a>.
+            In this game the user controls the spaceship and has to destroy all the planets to win.
+        </div>
+    </div>
+    <div class="lightbox hidden" id="proj3">
+        <h2 class="title">Scheme Interpreter</h2>
+        <img src="./assets/img/Scheme.PNG" id="3">
+        <div class="caption">
+            For this project, I implemented a fully functional, tail recursive scheme interpreter.
+            You can see it work by hovering over the image! Scheme is a LISP (list processing) language
+            that was popular during the '70s.
+        </div>
+    </div>
+    <div class="lightbox hidden" id="proj4">
+        <h2 class="title">CS61A: Autocorrected Typing Software</h2>
+        <img src="./assets/img/Cats.PNG" id="4">
+        <div class="caption">
+            For this project, I created an autocorrecting typing speed software. It also has a feature that displays
+            the user's accuracy.
+        </div>
+    </div>
+    <div class="lightbox hidden" id="proj5">
+        <h2 class="title">Ants vs. Some Bees</h2>
+        <img src="./assets/img/Ants.PNG" id="5">
+        <div class="caption">
+            This tower defense game is based on Pop Cap's Plants Vs Zombies. You play as the Ants
+            and try to defeat the bees. You win by defeating the Stanford Bee.
+        </div>
+    </div>
+    <div class="lightbox hidden" id="proj6">
+        <h2 class="title">The Game of Hog</h2>
+        <img src="./assets/img/Hog.PNG" id="6">
+        <div class="caption">
+            This is a dice game with a unique set of rules. Read about the rules <a
+                href="https://inst.eecs.berkeley.edu/~cs61a/su20/proj/hog/">here</a>.
+            You win by reaching 100 points first. You can either play against a set of computer generated strategies or
+            against a friend.
+        </div>
+    </div>
 
+    <div class="lightbox hidden" id="proj7">
+        <h2 class="title">World Builder</h2>
+        <img src="./assets/img/WorldGame.PNG" id="7">
+        <div class="caption">
+            This is a tile generator that pseudorandomly generates a world with rooms, halls, and objectives.
+            The player then races against a pathfinding AI to collect these objectives.
+            The PathFinding AI is an implementation of the A* graph pathfiding algorithm.
+        </div>
+    </div>
 
-        <div class="lightbox hidden" id="proj1">
-            <h2 class="title">Bear Maps</h2>
-            <img src="./assets/img/bearmaps.JPG" id="1">
-            <div class="caption">
-                This is a JavaSpark website which hosts an interactive map of Berkeley, CA I built in CS61B. It can find locations, autocomplete inputs, and compute the shortest path between two locations.
-            </div>
-        </div>
-        <div class="lightbox hidden" id="proj2">
-            <h2 class="title">NBody Extreme</h2>
-            <img src="./assets/img/NBodyExtreme.PNG" id="2">
-            <div class="caption">
-                This project models space using Newton's laws of gravitation and can simular orbitting bodies.
-                I also created an interactive game that I detail <a href="https://www.youtube.com/watch?v=VDvepcOWb4k&ab_channel=SandeepMukherjee">here</a>.
-                In this game the user controls the spaceship and has to destroy all the planets to win.             
-            </div>
-        </div>
-        <div class="lightbox hidden" id="proj3">
-            <h2 class="title">Scheme Interpreter</h2>
-            <img src="./assets/img/Scheme.PNG" id="3">
-            <div class="caption">
-                For this project, I implemented a fully functional, tail recursive  scheme interpreter. 
-                You can see it work by hovering over the image! Scheme is a LISP (list processing) language
-                that was popular during the '70s.
-            </div>
-        </div>
-        <div class="lightbox hidden" id="proj4">
-            <h2 class="title">CS61A: Autocorrected Typing Software</h2>
-            <img src="./assets/img/Cats.PNG" id="4">
-            <div class="caption">
-                For this project, I created an autocorrecting typing speed software. It also has a feature that displays
-                the user's accuracy. 
-            </div>
-        </div>
-        <div class="lightbox hidden" id="proj5">
-            <h2 class="title">Ants vs. Some Bees</h2>
-            <img src="./assets/img/Ants.PNG" id="5">
-            <div class="caption">
-                This tower defense game is based on Pop Cap's Plants Vs Zombies. You play as the Ants
-                and try to defeat the bees. You win by defeating the Stanford Bee. 
-            </div>
-        </div>
-        <div class="lightbox hidden" id="proj6">
-            <h2 class="title">The Game of Hog</h2>
-            <img src="./assets/img/Hog.PNG" id="6">
-            <div class="caption">
-                This is a dice game with a unique set of rules. Read about the rules <a href="https://inst.eecs.berkeley.edu/~cs61a/su20/proj/hog/">here</a>. 
-                You win by reaching 100 points first. You can either play against a set of computer generated strategies or against a friend. 
-            </div>
-        </div>
+    <div class="lightbox hidden" id="proj1">
+        <h2 class="title">Pigcasso</h2>
+        <img src="./assets/img/pigcasso.PNG" id="1">
+        <div class="caption">
+            This is a React Electron application that uses <a href=https://arxiv.org/abs/1508.06576>this paper</a>'s Convolutional Neural Network
+            architecture to project style from Picasso's Weeping Woman onto an image of a pig. Tech stack: React Native, 
+            Electron, Flask, Tensorflow 1.15, 
+            Credit: <a
+            href=https://www.tensorflow.org/tutorials/generative/style_transfer>Tensorflow tutorial</a>
 
-        <div class="lightbox hidden" id="proj7">
-            <h2 class="title">World Builder</h2>
-            <img src="./assets/img/WorldGame.PNG" id="7">
-            <div class="caption">
-                This is a tile generator that pseudorandomly generates a world with rooms, halls, and objectives.
-                The player then races against a pathfinding AI to collect these objectives.
-                The PathFinding AI is an implementation of the A* graph pathfiding algorithm.
-            </div>
         </div>
+    </div>
 
-        <script src="./assets/js/theme-selector.js"></script>
-        <script src="./assets/js/gifHover.js"></script>
-        <script src="./assets/js/popout.js"></script>
-        <script src="./assets/js/simplifiedProj.js"></script>
+    <script src="./assets/js/theme-selector.js"></script>
+    <script src="./assets/js/gifHover.js"></script>
+    <script src="./assets/js/popout.js"></script>
+    <script src="./assets/js/simplifiedProj.js"></script>
 
-    </body>
+</body>
+
 </html>

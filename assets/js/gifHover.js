@@ -7,6 +7,8 @@ gifMap.set("./assets/img/Cats.PNG", "./assets/img/CatsGif.gif")
 gifMap.set("./assets/img/Hog.PNG", "./assets/img/HogGif.gif")
 gifMap.set("./assets/img/Ants.PNG", "./assets/img/AntsGif.gif")
 gifMap.set("./assets/img/WorldGame.PNG", "./assets/img/WorldGameGif.gif")
+gifMap.set("./assets/img/pigcasso.PNG", "./assets/img/pigcasso.gif")
+
 
 
 
